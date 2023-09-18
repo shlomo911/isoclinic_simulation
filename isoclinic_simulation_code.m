@@ -41,8 +41,8 @@ create_gif = 0;
     % set to 1 to automatically create a GIF file from all plots (the "gif" 
     % function must first be downloaded from File Exchange, for this option)
 display_axes = 0;
-    % set to 0 to get rid of axes (there's not much need for then in this 
-    % experiment), 1 to display axes
+    % set to 0 to get rid of axes (there's not much need for them in this 
+    % simulation), 1 to display axes
     
 %% MORE ADJUSABLE (AND NON-ADJUSATABLE) PARAMETERS
 
@@ -104,7 +104,7 @@ while true % if continuous mode is enabled, animation will run until CTRL+C is p
     
     for i = 1:1:number_of_angles
 
-        % draw turing polarizer in background (if enabled)
+        % draw turning polarizer in background (if enabled)
         if polarizer
             if i == 1 % initiate parameters for draw_polarizer(...) ahead
                 l1=0; l2=0; l3=0; l4=0;
